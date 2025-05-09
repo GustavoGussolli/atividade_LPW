@@ -12,38 +12,15 @@ $classificacao = $_POST['classIndi'];
 
 $jogo = new Card($nome, $genero, $plataforma, $desenvolvedora, $ano, $classificacao, $capa);
 
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrado</title>
-</head>
-
-<body>
-
-    <div class="container">
-
-        <?php
-
-        echo "<h1 style='color: #2A4759; text-align: center;'>Jogo Cadastrado com Sucesso</h1>
-        <div style='border: 1px solid #000; width: 300px; padding: 10px; color: #00adee,; background-color: #EEEEEE; border-radius: 10px;'>
-            <p>Nome: " . $jogo->getNome() . "</p><br>
-            <p>Gênero: " . $jogo->getGenero() . "</p><br>
-            <p>Plataforma: " . $jogo->getPlataforma() . "</p><br>
-            <p>Desenvolvedora: " . $jogo->getDesenvolvedora() . "</p><br>
-            <p>Ano: " . $jogo->getAno() . "</p><br>
-            <p>Classificação: " . $jogo->getClassificacao() . "</p><br>
-            <img src='" . $jogo->getCapa() . "' style='width: 100%; height: auto;' alt='Capa do Jogo'>
-        </div>";
-
-        ?>
-
-    </div>
-
-</body>
-
-</html>
+echo " <body style='display: flex; flex-direction: column; align-items: center; padding: 10px;'>
+        <h1 style='color: #2A4759; font-size: 40px;'>Jogo Cadastrado com Sucesso</h1>
+        <div style='border: 1px solid #000; width: 300px; padding: 10px; color: #2A4759; background-color: #EEEEEE; border-radius: 10px;'>
+            <p>Nome: " . $jogo->getNome() . "</p>
+            <p>Gênero: " . $jogo->getGenero() . "</p>
+            <p>Plataforma: " . $jogo->getPlataforma() . "</p>
+            <p>Desenvolvedora: " . $jogo->getDesenvolvedora() . "</p>
+            <p>Ano: " . $jogo->getAno() . "</p>
+            <p>Classificação: " . $jogo->getClassificacao() . "</p>
+            <img style='width: 250px; height: 250px; border-radius: 25px; padding: 10px' src='" . $jogo->getCapa() . "' alt='Capa do Jogo'>
+        </div> 
+    </body>";
