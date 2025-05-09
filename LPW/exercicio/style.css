@@ -1,0 +1,26 @@
+body {
+    color: #00adee, ;
+    background-color: #DDDDDD;
+    margin-top: 40px;
+}
+
+#botao {
+    color: #000;
+    background-color: #2A4759;
+}
+
+#botao:hover {
+    background-color: #F79B72;
+    transition: 1s;
+}
+
+.container {
+    color: #00adee, ;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #2A4759;
+}
